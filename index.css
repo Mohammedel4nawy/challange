@@ -1,0 +1,289 @@
+body {
+  background-color: whitesmoke;
+}
+
+.all {
+  height: 520px;
+  width: 750px;
+  box-shadow: 0px 0px 20px hsl(204, 43%, 83%);
+  border-radius: 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "up up" "leftdown rightdown";
+}
+.up {
+  background-color: white;
+  height: 235px;
+  width: 770;
+  grid-area: up;
+  padding-left: 40px;
+  padding-top: 10px;
+  color: hsl(204, 43%, 83%);
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.uptitle {
+  font-size: 25px;
+  font-family: karla;
+  font-weight: 700;
+  color: hsl(179, 62%, 43%);
+}
+.h2uptitle {
+  font-size: 22px;
+  font-family: "karla";
+  font-weight: 700;
+  color: hsl(71, 73%, 54%);
+}
+.h3uptitle {
+  font-weight: 700;
+  font-size: 16px;
+  text-wrap: 2;
+}
+
+.leftdown {
+  background-color: hsl(179, 62%, 43%);
+  height: 235px;
+  grid-area: leftdown;
+  height: 100%;
+  border-bottom-left-radius: 15px;
+}
+.lefttitle {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  font-family: karla;
+  padding-left: 30px;
+  position: absolute;
+  top: 52%;
+}
+.h2lefttitle {
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+  font-family: karla;
+  padding-left: 30px;
+  position: absolute;
+  top: 55%;
+}
+.h2lefttitle2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: hsl(204, 43%, 83%);
+  font-family: karla;
+  position: absolute;
+  left: 17%;
+  top: 61.5%;
+}
+.h3lefttitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  font-family: karla;
+  padding-left: 30px;
+  position: absolute;
+  top: 73%;
+}
+.bottom {
+  width: 250px;
+  height: 55px;
+  border-radius: 5px;
+  position: absolute;
+  top: 83%;
+  left: 8%;
+  font-size: 20px;
+  font-family: karla;
+  font-weight: 700;
+  background-color: hsl(71, 73%, 54%);
+  box-shadow: 0px 0px 1px black;
+}
+.bottom1 {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.rightdown {
+  background-color: hsl(179, 62%, 43%);
+  height: 235px;
+  grid-area: rightdown;
+  height: 100%;
+  border-bottom-right-radius: 15px;
+}
+.righttitle {
+  color: white;
+  font-size: 20px;
+  font-family: karla;
+  font-weight: 400;
+  padding-left: 30px;
+}
+.h2righttitle {
+  font-size: 16px;
+  font-family: karla;
+  font-weight: 400;
+  padding-left: 30px;
+  color: white;
+}
+footer {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-family: cursive;
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+  color: blueviolet;
+}
+
+@media (max-width: 376px) {
+  body {
+    background-color: whitesmoke;
+  }
+  .all {
+    height: 680px;
+    width: 300px;
+    box-shadow: 0px 0px 20px hsl(204, 43%, 83%);
+    border-radius: 15px;
+    position: absolute;
+    left: 46.5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "up" "leftdown" "rightdown";
+  }
+  .up {
+    background-color: white;
+    height: 270px;
+    width: 300px;
+    grid-area: up;
+    padding-left: 25px;
+    padding-top: 10px;
+    color: hsl(204, 43%, 83%);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .uptitle {
+    font-size: 25px;
+    font-family: karla;
+    font-weight: 700;
+    color: hsl(179, 62%, 43%);
+  }
+  .h2uptitle {
+    font-size: 22px;
+    font-family: "karla";
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);
+  }
+  .h3uptitle {
+    font-weight: 700;
+    font-size: 16px;
+    text-wrap: 2;
+  }
+  .leftdown {
+    background-color: hsl(179, 62%, 43%);
+    height: 270px;
+    grid-area: leftdown;
+    border-radius: 0px;
+  }
+  .lefttitle {
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    font-family: karla;
+    padding-left: 25px;
+    position: absolute;
+    top: 40%;
+  }
+  .h2lefttitle {
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    font-family: karla;
+    padding-left: 25px;
+    position: absolute;
+    top: 42%;
+  }
+  .h2lefttitle2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: hsl(204, 43%, 83%);
+    font-family: karla;
+    position: absolute;
+    left: 38%;
+    top: 46.5%;
+  }
+  .h3lefttitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    font-family: karla;
+    padding-left: 30px;
+    position: absolute;
+    top: 54%;
+  }
+  .bottom {
+    width: 280px;
+    height: 55px;
+    border-radius: 5px;
+    position: absolute;
+    top: 63%;
+    left: 7%;
+    font-size: 20px;
+    font-family: karla;
+    font-weight: 700;
+    background-color: hsl(71, 73%, 54%);
+    box-shadow: 0px 0px 1px black;
+  }
+  .bottom1 {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .rightdown {
+    background-color: hsl(179, 62%, 43%);
+    height: 230px;
+    grid-area: rightdown;
+
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .righttitle {
+    color: white;
+    font-size: 20px;
+    font-family: karla;
+    font-weight: 400;
+    padding-left: 20px;
+  }
+  .h2righttitle {
+    font-size: 16px;
+    font-family: karla;
+    font-weight: 400;
+    padding-left: 20px;
+    color: white;
+  }
+  footer {
+    position: absolute;
+    top: 830px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    font-family: cursive;
+    font-weight: 700;
+  }
+  a {
+    text-decoration: none;
+    color: blueviolet;
+  }
+}
